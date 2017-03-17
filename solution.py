@@ -74,8 +74,13 @@ def oddPairing(graph, odd):
                 distanceCity = distance(graph[i], graph[j])
                 if distanceCity < minDistance:
                    minIndex = j
-        graph[i][5].append(j)
+        graph[i][5].append(minIndex)
+        odd.remove(i)
+        odd.remove(minIndex)
    return graph
+
+def eulerTour(graph):
+    start = graph[0]
 
 
 
