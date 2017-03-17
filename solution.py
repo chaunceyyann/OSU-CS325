@@ -1,3 +1,23 @@
+from sys import argv
+from math import sqrt, pow
+
+
+def distance(city1, city2):
+    x = pow(city1[1] - city2[1], 2)
+    y = pow(city1[2] - city2[2], 2)
+    distance = sqrt(x + y)
+    return distance
+
+def minCity(graph):
+    minKey = float("inf")
+    minIndex = 0
+    size = len(graph)
+    for i in range(0, size):
+        if graph[i][3] < minKey:
+            minKey = graph[i][3]
+            minIndex = i
+    return minIndex
+
 def mstFunction(graph):
     route = []
     for city in graph:
