@@ -2,21 +2,33 @@
 # Project 4 for CS 325 @ Oregon State
 # Group 11: Chauncey Yan, Molly Michel Arwood, Mengying Fan
 ##################################################################################
-import math, re, sys
+import math, re, sys, signal
 
+def signal_handler(signum, fram):
+	raise Exception("Timed Out\n")
+
+	
 def main(instancefile):
+
+    signal.signal(signal.SIGALRM, signal_handler)
+    signal.alarm(120)	#3 minutes
+	
     cities = readinstance(instancefile)
     solution = [n[2] for n in cities] # create initial solution which is the input order
     print solution
     run = True
-    while run:
-        (run,solution) = twoOpt(cities, solution, len(solution))
-        tour = checksolution(cities,solution)
-        print tour 
-    print solution
-    solutionfile=instancefile+".tour"
-    createsolution(solutionfile,tour,solution)
-
+    try:
+	while run:
+		(run,solution) = twoOpt(cities, solution, len(solution))
+   		tour = checksolution(cities,solution)
+        	print tour 
+    	print solution
+    	solutionfile=instancefile+".tour"
+    	createsolution(solutionfile,tour,solution)
+    except Exception, msg:
+	print "Timed Out"
+	
+	
 ##################################################################################
 # provide by Juli Schutfort     schutfoj@engr.oregonstate.edu
 ##################################################################################
