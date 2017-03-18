@@ -6,7 +6,7 @@ import math, re, sys
 
 def main(instancefile):
     cities = readinstance(instancefile)
-    solution = [n[2] for n in cities] # create initial solution which is the input order
+    solution = [n[2] for n in cities] # create initial solution which using the input
     print solution
     run = True
     while run:
@@ -18,7 +18,7 @@ def main(instancefile):
     createsolution(solutionfile,tour,solution)
 
 ##################################################################################
-# provide by Juli Schutfort     schutfoj@engr.oregonstate.edu
+# provided by Juli Schutfort     schutfoj@engr.oregonstate.edu
 ##################################################################################
 def readinstance(filename):
     # each line of input file represents a city given by three integers:
@@ -46,7 +46,7 @@ def createsolution(filename,best,solution):
         w.write("%s\n" % city)
 
 ##################################################################################
-# provide by Juli Schutfort     schutfoj@engr.oregonstate.edu
+# provided by Juli Schutfort     schutfoj@engr.oregonstate.edu
 ##################################################################################
 def distance(a,b):
     # a and b are integer pairs (each representing a point in a 2D, integer grid)
@@ -100,7 +100,8 @@ def twoOpt(nodes, solution, node_size):
                 if gain > best:
                     best_sol = (pi,yi,xi,ni)
                     best = gain
-    # 
+    print best
+    # Reconstruct solution from the best swap saved in best_sol
     if best_sol !=  None:
         (pi,yi,xi,ni) = best_sol # restore the best solution to individual variables
 
@@ -130,7 +131,7 @@ def twoOpt(nodes, solution, node_size):
 
 
 ##################################################################################
-# provide by Juli Schutfort     schutfoj@engr.oregonstate.edu
+# provided by Juli Schutfort     schutfoj@engr.oregonstate.edu
 ##################################################################################
 def checksolution(cities, cityorder):
     # calculate the length of the tour given by cityorder:
