@@ -2,8 +2,8 @@ CS 325 @ Oregon State Univercity
 ================================
 ##### Author: Chauncey Yan
 
-### Description:
+### Project Description:
 
-PDF :
+[PDF](./CS325Project1W17.pdf)
 
 License: 
