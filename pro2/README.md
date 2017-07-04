@@ -4,6 +4,9 @@ CS 325 @ Oregon State Univercity
 
 ### Description:
 
-PDF :
+Compile Command:
+make prog
+	
+	
 
-License: 
+If you did not provide correct input file, it will print error and exit. 
