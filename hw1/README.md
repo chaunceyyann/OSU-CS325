@@ -3,6 +3,6 @@ CS 325 @ Oregon State Univercity
 ##### Author: Chauncey Yan
 
 ### Description:
-![PDF](./HW1W17.png)
+![PDF](./HW1W17.pdf)
 
 License: 
