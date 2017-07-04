@@ -1,6 +1,6 @@
 CS 325 @ Oregon State Univercity
 ================================
-![](./HW1W17-1.png)
-![](./HW1W17-2.png)
-[Solution](./HW1W17-Solutions.pdf)
+[Midterm Solution 1](./CS325MidW17Sol-1.pdf)
+[Midterm Solution 2](./CS325MidW17Sol-2.pdf)
+[Final Solution](./CS325FinalPracticeW17Solution.pdf)
 
