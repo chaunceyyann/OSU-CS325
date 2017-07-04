@@ -1,0 +1,19 @@
+TSP - Grading Rubric
+20 pts -  Solutions to the competition instances and example instances.
+
+You will be graded on how close your tour length is to that of the best known solution.
+There are seven competition instances and three example instances. You are given the optimal values for the example instances.  However, you will not be told the optimal values for the competition instance tour lengths.  
+The formula for your score for each  instance is
+(your tour length)/(best known tour length) <= 1.25 for full credit ( 2pts )
+1.25 < (your tour length)/(best known tour length) <= 2.00 (1pt )
+greater than 2.0 or your program never terminates  (0 pts).
+You may use different algorithms for different instances.
+ Remember that doing well on this section (you have 4 days to run your code on the tests) does not necessarily mean you will do well in the competition, because of the short duration of the competition tests ( 3 minutes )
+20 pts -   Project Report and Code.
+
+You will be judged on clarity and creativity of your explanation for your algorithms and implementations 
+Pseudo code
+10 pts -  Participation in the competition.
+
+This will be awarded for full participation in finding a working, but not necessarily very short, solution to each competition case. There will be a penalty for each test case that your program cannot find a solution for within 3 minutes.
+Good Luck!
