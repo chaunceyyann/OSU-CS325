@@ -2,7 +2,9 @@ CS 325 @ Oregon State Univercity
 ================================
 ##### Author: Chauncey Yan
 
-### Description:
+### Project Description:
+[PDF](./CS325Project2FW17-1.pdf)
+
 
 Compile Command:
 make prog

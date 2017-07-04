@@ -1,6 +1,9 @@
 # CS_325_AA
 Projects from Analysis of Algorithms Class
 Project 4 - Group 11  		03/17/2017
+###  Project Descriptions:
+
+[PDF](./Project4w17.pdf)
 
 -----------------------------
 Command Line Arguments
